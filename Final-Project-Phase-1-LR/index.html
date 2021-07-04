@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Thanks Bootstrap for the amazing buttons styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Order</title>
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <div id="topOfPage">
+      <button class="topIcon" id="profile">
+        <img src="/images/icons8-customer-40.png" alt="Profile" />
+      </button>
+    </div>
+    <div id="main">
+      <div>
+        <h1 id="header">&sim; Menu &sim;</h1>
+      </div>
+      <div id="userInfoBox">
+        <form id="submitUserInfo">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="name"
+            required
+          />
+          <input
+            type="number"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="phone"
+            required
+          />
+          <textarea
+            rows="2"
+            name="adress"
+            id="adress"
+            placeholder="full adress"
+            required
+          ></textarea>
+          <input
+            type="radio"
+            class="radioCheckBox"
+            id="pickUp"
+            name="pickUpDelivery"
+            value="Pick up"
+            checked
+          />
+            <label class="labelForRadio" for="pickUp">Pick up</label><br />
+
+          <input
+            type="radio"
+            class="radioCheckBox"
+            id="delivery"
+            name="pickUpDelivery"
+            value="Delivery"
+          />
+            <label class="labelForRadio" for="delivery">Delivery</label><br />
+          <br />
+          <input
+            type="radio"
+            class="radioCheckBox"
+            id="cash"
+            name="cashCard"
+            value="cash"
+            checked
+          />
+            <label class="labelForRadio" for="cash">cash</label><br />
+
+          <input
+            type="radio"
+            class="radioCheckBox"
+            id="card"
+            name="cashCard"
+            value="card"
+          />
+            <label class="labelForRadio" for="card">card</label><br />
+          <br />
+          <input type="submit" value="submit" />
+        </form>
+        <p>
+          (Please note that our driver will bring an eftpos machine only if
+          'card' is checked)
+        </p>
+      </div>
+      <div id="orderInfoBox">
+        <p>no item added</p>
+      </div>
+      <h3 class="pizzaType">Red Pizzas</h3>
+      <div id="redPizzas">
+        <div class="redPizzas" id="margherita">
+          <img
+            src="/images/margherita.jpg"
+            alt="margherita"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Margherita">Margherita.......$25</h2>
+          <p class="pizzaText">
+            Tomato base pizza topped with napolitana sauce, mozzarella and basil
+          </p>
+        </div>
+        <div class="redPizzas" id="marinara">
+          <img
+            src="/images/marinara.jpg"
+            alt="marinara"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Marinara">Marinara.......$22</h2>
+          <p class="pizzaText">
+            Tomato base pizza topped with napolitana sauce, rosmarine and garlic
+          </p>
+        </div>
+        <div class="redPizzas" id="prosciutto">
+          <img
+            src="/images/prosciutto.jpg"
+            alt="prosciutto"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Prosciutto">Prosciutto.......$28</h2>
+          <p class="pizzaText">
+            Tomato base pizza topped with napolitana sauce, mozzarella, red ham
+            and rocket salad
+          </p>
+        </div>
+        <div class="redPizzas" id="diavola">
+          <img
+            src="/images/diavola.jpg"
+            alt="diavola"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Diavola">Diavola.......$28</h2>
+          <p class="pizzaText">
+            Tomato base pizza topped with napolitana sauce, mozzarella, hot
+            salami and olives
+          </p>
+        </div>
+        <div class="redPizzas" id="prawn">
+          <img
+            src="/images/prawn.jpg"
+            alt="prawn"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Prawn">Prawn.......$30</h2>
+          <p class="pizzaText">
+            Tomato base pizza topped with napolitana sauce, mozzarella, sea
+            prawn and spinach
+          </p>
+        </div>
+        <div class="redPizzas" id="norma">
+          <img
+            src="/images/norma.jpg"
+            alt="norma"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Norma">Norma.......$27</h2>
+          <p class="pizzaText">
+            Tomato base pizza topped with napolitana sauce, mozzarella and basil
+          </p>
+        </div>
+        <div class="redPizzas" id="tuna">
+          <img
+            src="/images/tuna.jpg"
+            alt="tuna"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Tuna">Tuna.......$25</h2>
+          <p class="pizzaText">
+            Tomato base pizza topped with napolitana sauce, mozzarella tuna and
+            onion
+          </p>
+        </div>
+        <div class="redPizzas" id="peperoni">
+          <img
+            src="/images/peperoni.jpg"
+            alt="peperoni"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Peperoni">Peperoni.......$26</h2>
+          <p class="pizzaText">
+            Tomato base pizza topped with napolitana sauce, mozzarella and
+            peperoni
+          </p>
+        </div>
+        <div class="redPizzas" id="calzone">
+          <img
+            src="/images/calzone.jpg"
+            alt="calzone"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Calzone">Calzone.......$25</h2>
+          <p class="pizzaText">
+            Closed pizza filled with Napolitana sauce, mozzarella and ham
+          </p>
+        </div>
+      </div>
+      <h3 class="pizzaType">White Pizzas</h3>
+      <div id="whitePizzas">
+        <div class="whitePizzas" id="garlic">
+          <img
+            src="/images/garlic.jpg"
+            alt="garlic"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Garlic">Garlic.......$23</h2>
+          <p class="pizzaText">
+            creme fraiche base pizza topped with mozzarella, garlic sauce and
+            oregano
+          </p>
+        </div>
+        <div class="whitePizzas" id="fruttiDiMare">
+          <img
+            src="/images/fruttiDiMare.jpg"
+            alt="fruttiDiMare"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Seafood">Seafood.......$28</h2>
+          <p class="pizzaText">
+            creme fraiche pizza topped with sea mussles, prawns and parsley
+          </p>
+        </div>
+        <div class="whitePizzas" id="potato">
+          <img
+            src="/images/potato.jpg"
+            alt="potato"
+            width="300px"
+            height="200px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Potato">Potato.......$26</h2>
+          <p class="pizzaText">
+            creame fraiche pizza topped with mozzarella, potato, garlic and
+            rosmarine
+          </p>
+        </div>
+      </div>
+      <h3 class="pizzaType">Drinks</h3>
+      <div id="drinks">
+        <div class="drinks" id="cocaCola">
+          <img
+            src="/images/cocaCola.jpg"
+            alt="cocaCola"
+            width="300px"
+            height="280px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Coca-Cola">Coca-Cola.......$4</h2>
+        </div>
+        <div class="drinks" id="fanta">
+          <img
+            src="/images/fanta.jpg"
+            alt="fanta"
+            width="300px"
+            height="280px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Fanta">Fanta.......$4</h2>
+        </div>
+        <div class="drinks" id="sprite">
+          <img
+            src="/images/sprite.jpg"
+            alt="sprite"
+            width="300px"
+            height="280px"
+            class="pizzaImg"
+          />
+          <h2 class="pizzaName" id="Sprite">Sprite.......$4</h2>
+        </div>
+      </div>
+      <h3 class="pizzaType">Pasta</h3>
+      <!-- fetch elements will be displayed here -->
+      <div id="pasta"></div>
+      <div id="checkOut" style="overflow-y: scroll; height: 80%">
+        <div id="order" class="fixedBox">
+          <h3 id="orderTitle" class="title">Your Order</h3>
+          <button id="clearAll" type="button" class="btn btn-danger">
+            Clear all
+          </button>
+          <ul id="selectedItems"></ul>
+          <div id="total">
+            <h3 id="totalTitle">Total</h3>
+            <h3 id="totalPrice">$0.00</h3>
+          </div>
+          <button type="button" class="btn btn-success" id="placeOrder">
+            Place Order
+          </button>
+          <p>Ph. number: 02 71114937</p>
+          <p>E-mail: bellapuglia@gmail.com</p>
+          <p>Address: 106 Great N Rd, Five Dock NSW 2046</p>
+        </div>
+        <div id="rating" class="fixedBox">
+          <h3 id="ratingTitle" class="title">Review</h3>
+          <div id="Stars">
+            <button class="emptyStar" class="star" id="star1">
+              <img src="/images/emptyStar.png" alt="star" />
+            </button>
+            <button class="emptyStar" class="star" id="star2">
+              <img src="/images/emptyStar.png" alt="2 stars" />
+            </button>
+            <button class="emptyStar" id="star3">
+              <img src="/images/emptyStar.png" alt="3 stars" />
+            </button>
+            <button class="emptyStar" class="star" id="star4">
+              <img src="/images/emptyStar.png" alt="4 stars" />
+            </button>
+            <button class="emptyStar" class="star" id="star5">
+              <img src="/images/emptyStar.png" alt="5 stars" />
+            </button>
+          </div>
+          <div id="review">
+            <form id="submitReview">
+              <textarea
+                id="reviewText"
+                name="w3review"
+                rows="4"
+                cols="50"
+              ></textarea>
+              <input type="submit" value="submit" />
+            </form>
+            <div id="reviewBox">
+              <p>No reviews yet</p>
+            </div>
+            <button id="deleteReview" type="button" class="btn btn-danger">
+              Delete Review
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
