@@ -55,6 +55,13 @@
   min-height: 200px;
 }
 
+.btn-outline-success {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  font-size: 30px;
+}
+
 .pizzaType {
   color: red;
   font-size: 60px;
@@ -114,12 +121,6 @@
 .pizzaImg {
   border-radius: 10px;
   margin-bottom: 15px;
-}
-
-.pizzaName {
-  margin-bottom: 15px;
-  margin-left: 20px;
-  font-size: 30px;
 }
 
 .pizzaText {

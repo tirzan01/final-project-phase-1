@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
             stars[i].addEventListener('click', () => {
                 for (let x = 0; x < stars.length; x++) {
                     if(x <= i){
-                        stars[x].innerHTML = '<img src = "/images/fullStar.png"></img>'            
+                        stars[x].innerHTML = '<img src = "./images/fullStar.png"></img>'            
                     }else{
-                        stars[x].innerHTML = '<img src = "/images/emptyStar.png"></img>'            
+                        stars[x].innerHTML = '<img src = "./images/emptyStar.png"></img>'            
                     }                  
                 }
             })
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `
         document.getElementById('submitReview').reset()
         for (let i = 0; i < stars.length; i++) {
-            stars[i].innerHTML = '<img src="/images/emptyStar.png">'
+            stars[i].innerHTML = '<img src="./images/emptyStar.png">'
         }
     })
 
@@ -86,21 +86,21 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const items = [
-        new Item ('Margherita', '$25', '/images/margherita.jpg'), 
-        new Item ('Marinara', '$22', '/images/marinara.jpg'),  
-        new Item ('Prosciutto', '$28', '/images/prosciutto.jpg'),
-        new Item ('Diavola', '$28', '/images/diavola.jpg'),
-        new Item ('Prawn', '$30', '/images/prawn.jpg'),
-        new Item ('Norma', '$27', '/images/norma.jpg'),
-        new Item ('Tuna', '$25', '/images/tuna.jpg'),
-        new Item ('Peperoni', '$26', '/images/peperoni.jpg'),
-        new Item ('Calzone', '$25', '/images/calzone.jpg'),
-        new Item ('Garlic', '$23', '/images/garlic.jpg'),
-        new Item ('Seafood', '$28', '/images/seafood.jpg'),
-        new Item ('Potato', '$26', '/images/potato.jpg'),
-        new Item ('Coca-Cola', '$4', '/images/cocaCola.jpg'),
-        new Item ('Fanta', '$4', '/images/fanta.jpg'),
-        new Item ('Sprite', '$4', '/images/sprite.jpg')
+        new Item ('Margherita', '$25', './images/margherita.jpg'), 
+        new Item ('Marinara', '$22', './images/marinara.jpg'),  
+        new Item ('Prosciutto', '$28', './images/prosciutto.jpg'),
+        new Item ('Diavola', '$28', './images/diavola.jpg'),
+        new Item ('Prawn', '$30', './images/prawn.jpg'),
+        new Item ('Norma', '$27', './images/norma.jpg'),
+        new Item ('Tuna', '$25', './images/tuna.jpg'),
+        new Item ('Peperoni', '$26', './images/peperoni.jpg'),
+        new Item ('Calzone', '$25', './images/calzone.jpg'),
+        new Item ('Garlic', '$23', './images/garlic.jpg'),
+        new Item ('Seafood', '$28', './images/seafood.jpg'),
+        new Item ('Potato', '$26', './images/potato.jpg'),
+        new Item ('Coca-Cola', '$4', './images/cocaCola.jpg'),
+        new Item ('Fanta', '$4', './images/fanta.jpg'),
+        new Item ('Sprite', '$4', './images/sprite.jpg')
     ]
     
     fetchPasta(52839, linguine, 'Linguine', '$27')
@@ -182,7 +182,9 @@ const lasagne = info => `
     height="200px"
     class="pizzaImg"
 />
-<h2 class="pizzaName" id="${info.strMeal}">${info.strMeal}.......$25</h2>
+<button type="button" class="btn btn-outline-success" id="${info.strMeal}">
+${info.strMeal}.......$25
+</button>
 <p class="pizzaText">
     ${info.strIngredient11} and ${info.strIngredient8} with ${info.strIngredient7} and ${info.strIngredient13}, topped with ${info.strIngredient14}
 </p>
@@ -197,7 +199,9 @@ const linguine = info => `
     height="200px"
     class="pizzaImg"
 />
-<h2 class="pizzaName" id="${info.strMeal}">P${info.strMeal.replace('Chilli p', '')}.......$27</h2>
+<button type="button" class="btn btn-outline-success" id="${info.strMeal}">
+${info.strMeal}.......$27
+</button>
 <p class="pizzaText">
     ${info.strIngredient1} with ${info.strIngredient6}, ${info.strIngredient7} and ${info.strIngredient11}, topped with ${info.strIngredient5} and ${info.strIngredient8}
 </p>
@@ -211,7 +215,9 @@ const risotto = info => `
     height="200px"
     class="pizzaImg"
 />
-<h2 class="pizzaName" id="${info.strMeal}">${info.strMeal.replace('Salmon Prawn ', '')}.......$27</h2>
+<button type="button" class="btn btn-outline-success" id="${info.strMeal}">
+${info.strMeal}.......$27
+</button>
 <p class="pizzaText">
     ${info.strIngredient3} with ${info.strIngredient7}, ${info.strIngredient8} and ${info.strIngredient9}, topped with ${info.strIngredien10} and ${info.strIngredient11}
 </p>
